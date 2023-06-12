@@ -1,32 +1,46 @@
-import { TodoCounter } from "./TodoCounter.js";
-import { TodoSearch } from "./TodoSearch.js";
-import { TodoList } from "./TodoList.js";
+import {TodoCounter} from "./TodoCounter";
+import { TodoSearch } from "./TodoSearch";
+import { TodoList } from "./TodoList";
+import { CreateTodoButton } from "./CreateTodoButton";
+import React from 'react';
 import "./App.css";
+
+const defaultTodos = [
+  {text: 'Hacer la cama', completed: false},
+  {text: 'Lavar los platos', completed: true},
+  {text: 'Estudiar React.js', completed: true},
+  {text: 'Comprar la Xbox Series S', completed: false}
+]
 
 function App() {
   
   return (
     
-    <div className="App">
-      <TodoCounter/>
-      <TodoSearch/>
-      <TodoList>
-        <TodoItem/>
-        <TodoItem/>
-        <TodoItem/>
+    <React.Fragment>
+      
+      <TodoCounter completed={4} total={8}/>
+      <TodoSearch/> 
+       <TodoList>
+        {defaultTodos.map(todo => (
+          <TodoItem 
+            key={todo.text}
+            text={todo.text} 
+            completed={todo.completed}           
+          /> 
+        ))}
       </TodoList>
 
-      {/* <CreateTodoButton/> */}     
+      <CreateTodoButton/>     
       
-    </div>
+    </React.Fragment>
   );
 }
 
-function TodoItem() {
+function TodoItem(props) {
   return(  
     <li>
       <span>V</span>
-      <p>Llorar con la llorona</p>
+      <p>{props.text}</p>
       <span>X</span>
     </li>      
   );

@@ -1,5 +1,8 @@
-function TodoSearch(){
-    <input placeholder="Ingresa tarea"/>
+function TodoSearch() {
+    return(
+        <input placeholder="Ingresa tarea"/>
+    );
+   
 }
 
 export {TodoSearch}

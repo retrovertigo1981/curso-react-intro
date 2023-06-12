@@ -1,7 +1,10 @@
-function TodoList(props) {
-    <ul>
-        {props.children}
-    </ul>
+function TodoList({children}) {
+    return (
+        <ul>
+            {children}
+        </ul>
+    );
+   
 }
 
 export {TodoList}
