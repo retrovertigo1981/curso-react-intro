@@ -1,0 +1,46 @@
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  border: 2px solid #c33a76;
+  height: auto; 
+  margin: 20px;
+  border-radius: 25px;
+  
+}
+
+li span input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #c33a76;
+
+}
+
+li span input:checked {
+  background-color: #c33a76;
+}
+
+p{
+  font-weight: 800;
+  color: #f9eef9;
+  letter-spacing: 1.5px;
+}
+
+
+
+
+
+

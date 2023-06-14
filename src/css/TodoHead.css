@@ -1,0 +1,9 @@
+h1 {
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #e6f973;
+    background-clip: padding-box;
+}
