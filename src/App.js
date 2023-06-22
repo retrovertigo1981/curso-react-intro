@@ -1,9 +1,11 @@
 import { TodoHead } from "./TodoHead";
+import { CloseTodoButton } from "./CloseTodoButton";
 import {TodoCounter} from "./TodoCounter";
 import { TodoSearch } from "./TodoSearch";
 import { TodoList } from "./TodoList";
 import { CreateTodoButton } from "./CreateTodoButton";
-import "./css/App.css";
+import { TodoItem } from "./TodoItem";
+
 import React from 'react';
 
 
@@ -14,7 +16,7 @@ const defaultTodos = [
   {text: 'LAVAR LOS PLATOS', completed: true},
   {text: 'ESTUDIAR REACT.JS', completed: true},
   {text: 'COMPRAR XBOX SERIES S', completed: false},
-  {text: 'ESTUDIAR CSS', completed: false}
+  {text: 'ESTUDIAR CSS', completed: true}
 ]
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
     
     <React.Fragment>
       <TodoHead/>
+      <CloseTodoButton/> 
       <TodoCounter completed={4} total={8}/>
       <TodoSearch/> 
        <TodoList>
@@ -38,16 +41,6 @@ function App() {
       <CreateTodoButton/>     
       
     </React.Fragment>
-  );
-}
-
-function TodoItem(props) {
-  return(  
-    <li>
-      <span><input type="checkbox"></input></span>
-      <p>{props.text}</p>
-      <span>X</span>
-    </li>      
   );
 }
 

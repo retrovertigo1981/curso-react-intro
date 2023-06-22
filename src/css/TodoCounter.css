@@ -1,6 +1,12 @@
-h2 {
+.TodoCounter {
     font-size: 20px;
     text-align: center;
     margin: 0;
-    padding: 40px;    
+    padding: 40px;
+    font-weight: normal;    
 }
+
+.TodoCounter span {
+    font-weight: bold;
+}
+

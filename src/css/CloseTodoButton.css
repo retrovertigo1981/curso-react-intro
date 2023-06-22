@@ -1,0 +1,24 @@
+.closeBtn {
+    position: relative;    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: #e6f973;
+    z-index: 2;
+    font-size: 40px;
+    opacity: 0;
+    display: none;
+    transition: opacity .8s ease;
+    cursor: pointer;
+    
+    
+  }
+  
+  .closeBtn.active {
+    
+    transform: rotate(227deg);
+    
+   
+  }
+  

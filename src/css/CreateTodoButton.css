@@ -1,8 +1,22 @@
-button {
+
+.btn {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: none;
     background: #e6f973;
     font-size: 40px;
+    margin-block-end: 10px;
+    cursor: pointer;
+    
+   
+    
 }
+
+.btn.active{
+    display: none;    
+
+}
+
+
+

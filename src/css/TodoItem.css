@@ -3,44 +3,55 @@ ul {
   padding-inline-start: 0;
   display: flex;
   flex-direction: column;
-  
-  
-  
 }
 
 li {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: transparent;
   border: 2px solid #c33a76;
-  height: auto; 
-  margin: 20px;
+  height: auto;
+  margin: 10px;
   border-radius: 25px;
-  
 }
 
-li span input {
+li span {
+  margin-inline-start: 10px;
+  margin-inline-end: 15px;
+}
+
+li span .check {
   appearance: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 2px solid #c33a76;
-
+  cursor: pointer;
 }
 
-li span input:checked {
+li span .check:checked {
   background-color: #c33a76;
 }
 
-p{
+p {
   font-weight: 800;
   color: #f9eef9;
   letter-spacing: 1.5px;
+  
 }
 
+.complete {
+    text-decoration: line-through;
+    color: grey;
+}
 
-
-
-
-
+.close {
+  position: relative;
+  top: -28px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c33a76;
+  cursor: pointer;
+}

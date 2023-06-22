@@ -2,7 +2,7 @@ import "./css/TodoSearch.css"
 
 function TodoSearch() {
     return(
-        <input placeholder="Ingresa tarea"/>
+        <input className="search" placeholder="Busca una tarea"/>
     );
    
 }
