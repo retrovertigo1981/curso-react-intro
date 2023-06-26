@@ -9,24 +9,23 @@ body {
   justify-content: center;
   color: #f9eef9;
   text-align: center;
-  overflow-x: hidden;
   background: rgb(0,2,40);
   background: linear-gradient(
     130deg, 
     rgba(0,2,40,0.9877450980392157) 0%, rgb(79, 32, 96) 49%, rgba(65,102,155,1) 100%);
   font-family: 'Red Hat Display', sans-serif; 
   
+  
 }
 
 body.active {
-  overflow: hidden;
-  
-  
+  overflow: hidden;  
 }
 
 #root {  
   
   min-height: 100vh; 
+  opacity: 1;
   
 } 
 
@@ -92,6 +91,22 @@ body.active {
   opacity: 1;
   transition: 1.5s;
 }
+
+#root .btn {
+  transform: scale(1);
+  transform-origin: bottom right;
+  transition: 0.8s;
+}
+
+#root.active .btn {
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: 0.8s;
+}
+
+/* #root.active {
+ opacity: 0;
+} */
 
 .body::before {
   content: '';

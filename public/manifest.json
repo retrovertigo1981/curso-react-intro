@@ -8,15 +8,11 @@
       "type": "image/x-icon"
     },
     {
-      "src": "react192.png",
+      "src": "todoicon.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "react512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "362x363"
     }
+   
   ],
   "start_url": ".",
   "display": "standalone",

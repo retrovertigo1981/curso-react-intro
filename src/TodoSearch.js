@@ -1,8 +1,18 @@
+import React from "react";
 import "./css/TodoSearch.css"
 
-function TodoSearch() {
+function TodoSearch({searchValue,setSearchValue}) {
+    
+    const handleChange = (event) =>{
+        setSearchValue(event.target.value.toUpperCase());
+    }
+
     return(
-        <input className="search" placeholder="Busca una tarea"/>
+        <input className="search"
+        value={searchValue} 
+        placeholder="Busca una tarea"
+        onChange={handleChange}
+        />
     );
    
 }
