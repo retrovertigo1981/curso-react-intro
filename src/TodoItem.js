@@ -1,13 +1,16 @@
+import { CompleteIcon } from './CompleteIcon';
+import { DeleteIcon } from './DeleteIcon'
 import './css/TodoItem.css'
 
 function TodoItem(props) {
     return(  
       <li>
-        <span><input className="check" type="checkbox"></input></span>
+        <CompleteIcon completed = {props.completed} onComplete = {props.onComplete}/>
         <p className={`${props.completed && "complete"}`}>{props.text}</p>
-        <span className="close">X</span>
+        <DeleteIcon onDelete = {props.onDelete} />
+        
       </li>      
     );
 }
 
-export {TodoItem};
+export { TodoItem };

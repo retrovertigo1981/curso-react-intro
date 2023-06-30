@@ -9,11 +9,11 @@ import { TodoItem } from "./TodoItem";
 import React from "react";
 
 const defaultTodos = [
-  { text: "HACER LA CAMA", completed: true },
+  { text: "HACER LA CAMA", completed: false },
   { text: "LAVAR LOS PLATOS", completed: false },
   { text: "ESTUDIAR REACT.JS", completed: false },
   { text: "COMPRAR XBOX SERIES S", completed: false },
-  { text: "ESTUDIAR CSS", completed: true },
+  { text: "ESTUDIAR CSS", completed: false },
   { text: "ESTUDIAR GSAP", completed: false },
 ];
 
@@ -28,16 +28,34 @@ function App() {
 
   const searchResult = todos.filter((todo) => {
     return todo.text.includes(searchValue)
-  })
+  });
 
-  console.log("Estamos Buscando TODOS de " + searchValue);
-  console.log(setTodos);
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text === text
+    );
+    newTodos[todoIndex].completed = true;
+    setTodos(newTodos);
+  }
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text === text
+    );
+    newTodos.splice(todoIndex,1);
+    setTodos(newTodos);
+  }
+
+
+  
   
   return (
     <React.Fragment>
       <TodoHead />
       <CloseTodoButton />
-      <TodoCounter completed={todosCompleted} total={totalTodos} />
+      <TodoCounter completed={todosCompleted} total={totalTodos}/>
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
         {searchResult.map((todo) => (
@@ -45,6 +63,8 @@ function App() {
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
+            onComplete = {() => completeTodo(todo.text)}
+            onDelete = {() => deleteTodo(todo.text)}
           />
         ))}
       </TodoList>
