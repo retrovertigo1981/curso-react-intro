@@ -1,4 +1,4 @@
-import './css/CloseTodoButton.css';
+import './CloseTodoButton.css';
 
 function CloseTodoButton() {
     

@@ -1,4 +1,4 @@
-import "./css/TodoHead.css"
+import "./TodoHead.css"
 
 function TodoHead() {
     return (
