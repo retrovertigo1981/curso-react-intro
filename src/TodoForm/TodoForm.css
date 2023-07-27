@@ -1,0 +1,67 @@
+.Modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f9eef9;
+  letter-spacing: 2px;
+  margin-block-end: 20px;
+}
+
+textarea {
+  height: 50px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-block-end: 20px;
+  border: 2px solid #c33a76;
+  border-radius: 4px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.todoform-btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-block-start: 20px;
+}
+
+.btns {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #c33a76;
+  background: transparent;
+  color: #f9eef9;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-clear {
+  transition: 0.3s ease-out;
+}
+
+.btn-clear:hover {
+  letter-spacing: 2px;
+  transition: 0.3s ease-in;
+  font-weight: bold;
+}
+
+.btn-add-todo {
+  background-color: #c33a76;
+  transition: 0.3s ease-out;
+}
+
+.btn-add-todo:hover {
+  letter-spacing: 2px;
+  transition: 0.3s ease-in;
+  font-weight: bold;
+}

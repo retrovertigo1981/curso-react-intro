@@ -11,8 +11,13 @@
   margin-block-end: 10px;
   cursor: pointer;
 
+  transform: scale(1);
+  transform-origin: bottom right;
+  transition: 0.3s;
 }
 
-/* .btn.active {
-  display: none;
-} */
+.btn-hide {
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: 0.3s;
+}

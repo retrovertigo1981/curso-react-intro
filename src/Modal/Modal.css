@@ -1,0 +1,31 @@
+#modal {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  position: fixed;
+  top: 200px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s ease-out;
+  transform-origin: top center;
+}
+
+#modal.active {
+  transform: scale(1);
+  transition: 0.5s ease-in;
+  transform-origin: top center;
+  
+  
+}
+
+.Modal {
+    background: linear-gradient(
+        130deg, 
+        rgba(0,2,40,0.9877450980392157) 0%, rgb(79, 32, 96) 49%, rgba(65,102,155,1) 100%);
+  width: 60vw;
+  height: 300px;
+  padding: 40px;
+  border-radius: 10px;
+  
+  
+}

@@ -12,6 +12,7 @@ li {
   background-color: transparent;
   border: 2px solid #c33a76;
   height: auto;
+  max-width: 355.35px;
   margin: 10px;
   border-radius: 25px;
 }

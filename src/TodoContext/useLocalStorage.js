@@ -23,7 +23,7 @@ function useLocalStorage(itemName, initialValue) {
         setLoading(false);
         setError(true)
       }
-    }, 4000);
+    }, 2000);
 
   },[initialValue, itemName]);
 
@@ -35,3 +35,12 @@ function useLocalStorage(itemName, initialValue) {
 }
 
 export { useLocalStorage };
+
+// const defaultTodos = [
+//   { text: "HACER LA CAMA", completed: false },
+//   { text: "LAVAR LOS PLATOS", completed: false },
+//   { text: "ESTUDIAR REACT.JS", completed: false },
+//   { text: "COMPRAR XBOX SERIES S", completed: false },
+//   { text: "ESTUDIAR CSS", completed: false },
+//   { text: "ESTUDIAR GSAP", completed: false },
+// ];
