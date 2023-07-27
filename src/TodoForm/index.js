@@ -15,8 +15,13 @@ function TodoForm() {
     }
 
     const handleAddClick = () => {
-        addTodo(textArea.toUpperCase());
-        setTextArea('');
+        if (textArea === ''){
+            alert('Debes Ingresar una tarea')
+        }else{
+            addTodo(textArea.toUpperCase());
+            setTextArea('');
+        }
+        
     }
 
 
