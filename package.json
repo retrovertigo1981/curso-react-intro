@@ -11,8 +11,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://retrovertigo1981.github.io/curso-react-intro",
   "eslintConfig": {
     "extends": [
       "react-app"
@@ -30,5 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
