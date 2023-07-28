@@ -1,24 +1,22 @@
 .closeBtn {
-    position: relative;    
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: none;
-    background: #e6f973;
-    z-index: 2;
-    font-size: 40px;
-    opacity: 0;
-    display: none;
-    transition: opacity .8s ease;
-    cursor: pointer;
-    
-    
-  }
-  
-  .closeBtn.active {
-    
-    transform: rotate(227deg);
-    
-   
-  }
-  
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  color: #c33a76;
+  background: transparent;
+  z-index: 2;
+  font-size: 40px;
+  cursor: pointer;
+  transform: rotate(45deg) scale(1);
+  transition: 0.8s ease;
+
+}
+
+.closeBtn:hover {
+  transform: rotate(225deg) scale(1.5);
+  transition: 0.8s ease;
+}

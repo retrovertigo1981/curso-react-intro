@@ -105,6 +105,7 @@ body.active {
 
 .body.active::before {
   transform: rotate(0);
+  transition: 0.6s;
   top: 0;
   left: 0;
   width: 50%;
@@ -132,6 +133,7 @@ body.active {
 
 .body.active::after {
   transform: rotate(0);
+  transition: 0.6s;
   bottom: 0;
   top: 0;
   right: 0;

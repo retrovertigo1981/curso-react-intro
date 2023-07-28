@@ -1,6 +1,5 @@
 import React from "react";
 import { TodoHead } from "../TodoHead";
-import { CloseTodoButton } from "../CloseTodoButton";
 import { TodoCounter } from "../TodoCounter";
 import { TodoSearch } from "../TodoSearch";
 import { TodoList } from "../TodoList";
@@ -31,7 +30,7 @@ function AppUI() {
   return (
     <>
       <TodoHead />
-      <CloseTodoButton />
+      {/* <CloseTodoButton /> */}
       <TodoCounter />
       <TodoSearch />
 
