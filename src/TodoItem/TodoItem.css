@@ -17,16 +17,13 @@ li {
   border-radius: 25px;
 }
 
-
 p {
   font-weight: 800;
   color: #f9eef9;
   letter-spacing: 1.5px;
-  
 }
 
 .complete {
   text-decoration: line-through;
   color: grey;
 }
-

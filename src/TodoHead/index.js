@@ -1,10 +1,8 @@
 import React from "react";
-import "./TodoHead.css"
+import "./TodoHead.css";
 
 function TodoHead() {
-    return (
-        <h1>TODO.APP</h1>
-    );
+  return <h1>TODO.APP</h1>;
 }
 
-export {TodoHead}
+export { TodoHead };

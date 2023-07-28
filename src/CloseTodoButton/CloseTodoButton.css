@@ -13,7 +13,6 @@
   cursor: pointer;
   transform: rotate(45deg) scale(1);
   transition: 0.8s ease;
-
 }
 
 .closeBtn:hover {

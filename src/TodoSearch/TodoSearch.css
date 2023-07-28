@@ -1,14 +1,12 @@
 .search {
-    width: 270px;
-    height: 50px;
-    border-radius: 20px;
-    border: none;
-    padding-left: 20px;
-    font-size: 20px;
-    
-    
+  width: 270px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
 }
 
 .search:focus {
-    outline-color: #c33a76;
+  outline-color: #c33a76;
 }

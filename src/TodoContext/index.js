@@ -16,7 +16,7 @@ function TodoProvider({ children }) {
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      
+
       const isVisible = scrollPosition >= 250 ? "btn btn-hide" : "btn";
       setShowButton(isVisible);
     };

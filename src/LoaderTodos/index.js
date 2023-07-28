@@ -1,12 +1,12 @@
 import React from "react";
-import './LoaderTodos.css'
+import "./LoaderTodos.css";
 
 function LoaderTodos() {
-    return(
-        <div className="spinner">
-            <div className="spinner1"></div>
-        </div>
-    )
+  return (
+    <div className="spinner">
+      <div className="spinner1"></div>
+    </div>
+  );
 }
 
 export { LoaderTodos };

@@ -1,40 +1,36 @@
 li span {
-    margin-inline-start: 10px;
-    margin-inline-end: 15px;
+  margin-inline-start: 10px;
+  margin-inline-end: 15px;
 }
 
 .check {
-  
-    cursor: pointer;
-    
+  cursor: pointer;
 }
 
 .delete {
-    
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: rgba(79, 32, 96);
-    cursor: pointer;
-    fill: #c33a76;
-    
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(79, 32, 96);
+  cursor: pointer;
+  fill: #c33a76;
 }
 
 .delete:hover .Icon-svg {
- transform: scale(1.3);
- transition: 0.1s ease-in;
- background: rgba(79, 32, 96);
- border-radius: 50%;
+  transform: scale(1.3);
+  transition: 0.1s ease-in;
+  background: rgba(79, 32, 96);
+  border-radius: 50%;
 }
 
 .check:hover .Icon-svg {
-    transform: scale(1.3);
-    transition: 0.2s ease-in;
+  transform: scale(1.3);
+  transition: 0.2s ease-in;
 }
 
 .Icon-svg {
-    width: 24px;
-    height: 24px;
-    transform: scale(1);
-    transition: 0.2s ease-out;
+  width: 24px;
+  height: 24px;
+  transform: scale(1);
+  transition: 0.2s ease-out;
 }
